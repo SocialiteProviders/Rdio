@@ -46,25 +46,13 @@ class Server extends BaseServer
     {
         $data = $data['result'];
 
-        $user = new User();
-
+        $user         = new User();
         $user->id     = $data['key'];
         $user->name   = $data['firstName'].' '.$data['lastName'];
         $user->avatar = $data['icon500'];
-
-        $used = ['key', 'icon500', 'firstName', 'lastName'];
-
-        foreach ($data as $key => $value) {
-            if (strpos($key, 'url') !== false) {
-                if (!in_array($key, $used)) {
-                    $used[] = $key;
-                }
-
-                $user->urls[$key] = $value;
-            }
-        }
-
-        $user->extra = array_diff_key($data, array_flip($used));
+        $user->extra  = array_diff_key($data, array_flip([
+            'key', 'icon500', 'firstName', 'lastName',
+        ]));
 
         return $user;
     }
