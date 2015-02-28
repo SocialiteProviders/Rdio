@@ -1,5 +1,11 @@
 # Rdio OAuth1 Provider for Laravel Socialite
 
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/SocialiteProviders/Rdio.svg?style=flat-square)](https://scrutinizer-ci.com/g/SocialiteProviders/Rdio/?branch=master)
+[![Latest Stable Version](https://img.shields.io/packagist/v/socialiteproviders/rdio.svg?style=flat-square)](https://packagist.org/packages/socialiteproviders/rdio)
+[![Total Downloads](https://img.shields.io/packagist/dt/socialiteproviders/rdio.svg?style=flat-square)](https://packagist.org/packages/socialiteproviders/rdio)
+[![Latest Unstable Version](https://img.shields.io/packagist/vpre/socialiteproviders/rdio.svg?style=flat-square)](https://packagist.org/packages/socialiteproviders/rdio)
+[![License](https://img.shields.io/packagist/l/socialiteproviders/rdio.svg?style=flat-square)](https://packagist.org/packages/socialiteproviders/rdio)
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
