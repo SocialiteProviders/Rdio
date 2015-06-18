@@ -1,4 +1,5 @@
 <?php
+
 namespace SocialiteProviders\Rdio;
 
 use Laravel\Socialite\One\User;
@@ -46,11 +47,11 @@ class Server extends BaseServer
     {
         $data = $data['result'];
 
-        $user         = new User();
-        $user->id     = $data['key'];
-        $user->name   = $data['firstName'].' '.$data['lastName'];
+        $user = new User();
+        $user->id = $data['key'];
+        $user->name = $data['firstName'].' '.$data['lastName'];
         $user->avatar = $data['icon500'];
-        $user->extra  = array_diff_key($data, array_flip([
+        $user->extra = array_diff_key($data, array_flip([
             'key', 'icon500', 'firstName', 'lastName',
         ]));
 

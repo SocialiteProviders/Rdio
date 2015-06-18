@@ -1,4 +1,5 @@
 <?php
+
 namespace SocialiteProviders\Rdio;
 
 use SocialiteProviders\Manager\SocialiteWasCalled;
